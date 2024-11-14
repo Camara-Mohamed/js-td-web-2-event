@@ -9,9 +9,53 @@ Au focus sur le champ, vide-le et change sa couleur de fond. Lorsqu'on clique en
 */
 
 // Un seul champ
+document.addEventListener("DOMContentLoaded", () => {
+    const champsPrenom = document.getElementById("prenom");
 
+    champsPrenom.addEventListener("focus", () => {
+        champsPrenom.value = ""; // Vide le champ
+        champsPrenom.style.backgroundColor = "#f0f8ff";
+    });
+
+    champsPrenom.addEventListener("blur", () => {
+        champsPrenom.style.backgroundColor = "transparent";
+    });
+});
 
 // Deux champs
+document.addEventListener("DOMContentLoaded", () => {
+    const champsPrenom = document.getElementById("prenom");
+    const champsNom = document.getElementById("nom");
 
+    champsPrenom.addEventListener("focus", () => {
+        champsPrenom.value = "";
+        champsPrenom.style.backgroundColor = "#f0f8ff";
+    });
+    champsPrenom.addEventListener("blur", () => {
+        champsPrenom.style.backgroundColor = "transparent";
+    });
+
+    champsNom.addEventListener("focus", () => {
+        champsNom.value = "";
+        champsNom.style.backgroundColor = "#f0f8ff";
+    });
+    champsNom.addEventListener("blur", () => {
+        champsNom.style.backgroundColor = "transparent";
+    });
+});
 
 // Plusieurs champs
+document.addEventListener("DOMContentLoaded", () => {
+    const textFields = document.querySelectorAll("input[type='text']");
+
+    textFields.forEach((champs) => {
+        champs.addEventListener("focus", () => {
+            champs.value = "";
+            champs.style.backgroundColor = "#f0f8ff";
+        });
+
+        champs.addEventListener("blur", () => {
+            champs.style.backgroundColor = "transparent";
+        });
+    });
+});

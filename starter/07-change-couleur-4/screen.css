@@ -1,39 +1,49 @@
-body{
-	font: 18px/1.5 "Fira Sans OT", "Trebuchet MS", sans-serif;
-	padding: 1em 0.5em 0 5em;
+:root {
+    --main-color: purple;
 }
-h1{
-	color: purple;
-	font-size: 3em;
-	text-transform: uppercase;
-	letter-spacing:0.05em;
-	margin-left: 0.3em;
+
+body {
+    font: 18px/1.5 "Fira Sans OT", "Trebuchet MS", sans-serif;
+    padding: 1em 0.5em 0 5em;
 }
-#f{
-	border:none;
+
+h1 {
+    color: var(--main-color);
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-left: 0.3em;
 }
-legend{
-	margin: 1em 0 0.5em;
-	font-size: 2em;
+
+#f {
+    border: none;
 }
-br{
-	margin:0.5em;
+
+legend {
+    margin: 1em 0 0.5em;
+    font-size: 2em;
 }
-input[type="radio"]{
-	margin-bottom: 1.2em;
+
+br {
+    margin: 0.5em;
 }
-input[type="button"]{
-	font: 1.6em/1.5 "Fira Sans OT", "Trebuchet MS", sans-serif;
-	margin-top:2em;
-	padding:1em 1.5em;
-	color:white;
-	background-color: purple;
-	border: 1px solid purple;
-	border-radius:10px;
-	//outline: 2px solid purple;
+
+input[type="radio"] {
+    margin-bottom: 1.2em;
 }
-input[type="button"]:hover{
-	color:purple;
-	font-weight: bold;
-	background-color: white;
+
+input[type="submit"] {
+    font: 1.6em/1.5 "Fira Sans OT", "Trebuchet MS", sans-serif;
+    margin-top: 2em;
+    padding: 1em 1.5em;
+    color: white;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+}
+
+input[type="submit"]:hover {
+    color: var(--main-color);
+    font-weight: bold;
+    background-color: white;
 }

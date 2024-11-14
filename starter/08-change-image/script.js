@@ -26,8 +26,31 @@ La méthode classique est de créer une variable temporaire, comme ceci :
 */
 
 
-
 // version de base
+/*
+document.addEventListener("DOMContentLoaded", () => {
+    const image = document.querySelector("img");
 
+    image.addEventListener("click", () => {
+        let imageTemporaire = image.src;
+        image.src = image.getAttribute("data-hover");
+        image.setAttribute("data-hover", imageTemporaire);
+    });
+});
+*/
 
 // BONUS : switch entre les deux images
+document.addEventListener("DOMContentLoaded", () => {
+    const image = document.querySelector("img");
+
+    image.addEventListener("click", () => {
+        // Stocke temporairement la source actuelle de l'image
+        let imageTemporaire = image.src;
+
+        // Change la source actuelle par celle dans l'attribut data-hover
+        image.src = image.getAttribute("data-hover");
+
+        // Met la source originale dans data-hover pour alterner à chaque clic
+        image.setAttribute("data-hover", imageTemporaire);
+    });
+});

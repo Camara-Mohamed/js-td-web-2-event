@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Affiche bonjour (2)</title>
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
-        <link rel="stylesheet" href="css/normalize.css" />
-        <link rel="stylesheet" href="css/styles.css" />
-        <style>.entree{font-size: 2em; margin-bottom: 1em;}</style>
-    </head>
-    <body>
-        <div class="container">
-            <header>
-                <!-- <h1>BeCode / JavaScript</h1> -->
-                <h2>
-                    <span>2</span>
-                    <strong>dis bonjour (2)</strong>
-                </h2>
-            </header>
-            <div class="content">
-                <section class="explain">
-                    <p>Récupère le prénom que ton visiteur entre dans le champ et, quand il clique sur le bouton, dis-lui bonjour dans une boîte de dialogue.</p>
-                </section>
-                <section class="material">
-                    <div class="entree">
-                        <label for="prenom">Je m'appelle</label>
-                        <input type="text" id="prenom" name="prenom" placeholder="prénom">
-                    </div>
-                    <div class="actions">
-                        <button type="button" id="hello">Dis-moi bonjour !</button>
-                    </div>
-                </section>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Affiche bonjour (2)</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <script defer src="script.js"></script>
+    <style>.entree {
+        font-size: 2em;
+        margin-bottom: 1em;
+    }</style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <!-- <h1>BeCode / JavaScript</h1> -->
+        <h2>
+            <span>2</span>
+            <strong>dis bonjour (2)</strong>
+        </h2>
+    </header>
+    <div class="content">
+        <section class="explain">
+            <p>Récupère le prénom que ton visiteur entre dans le champ et, quand il clique sur le bouton, dis-lui
+                bonjour dans une boîte de dialogue.</p>
+        </section>
+        <section class="material">
+            <div class="entree">
+                <label for="prenom">Je m'appelle</label>
+                <input type="text" id="prenom" name="prenom" placeholder="prénom">
             </div>
-        </div>
-        <script src="script.js"></script>
-    </body>
+            <div class="actions">
+                <button type="button" id="hello">Dis-moi bonjour !</button>
+            </div>
+        </section>
+    </div>
+</div>
+</body>
 </html>
 

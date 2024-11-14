@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Exercice 10 - focus champ</title>
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
-        <link rel="stylesheet" href="css/normalize.css" />
-        <link rel="stylesheet" href="css/styles.css" />
-    </head>
-    <body>
-        <div class="container">
-            <header>
-                <!-- <h1>BeCode / JavaScript</h1> -->
-                <h2>
-                    <span>10</span>
-                    <strong>le champ réagit au focus</strong>
-                </h2>
-            </header>
-            <div class="content">
-                <section class="explain">
-                    <p>Au focus sur le champ, vide-le et change sa couleur de fond. Lorsqu'on clique en dehors, sa couleur de fond redevient transparente.</p>
-                </section>
-                <section class="material">
-                    <form action="#" method="get">
-                        <div class="field">
-                            <label for="prenom">Prénom&nbsp;:</label>
-                            <input type="text" name="prenom" id="prenom">
-                            <br>
-                            <label for="nom">Prénom&nbsp;:</label>
-                            <input type="text" name="nom" id="nom">
-                        </div>
-                        <div class="actions">
-                            <button type="button" id="colorBtn">Contacte-moi !</button> <!-- à modifier en button de type submit si on veut un vrai formulaire qui soumet les données -->
-                        </div>
-                    </form>
-                </section>
-            </div>
-        </div>
-        <script src="script.js"></script>
-    </body>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Exercice 10 - focus champ</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <script defer src="script.js"></script>
+</head>
+<body>
+<div class="container">
+    <header>
+        <!-- <h1>BeCode / JavaScript</h1> -->
+        <h2>
+            <span>10</span>
+            <strong>le champ réagit au focus</strong>
+        </h2>
+    </header>
+    <div class="content">
+        <section class="explain">
+            <p>Au focus sur le champ, vide-le et change sa couleur de fond. Lorsqu'on clique en dehors, sa couleur de
+                fond redevient transparente.</p>
+        </section>
+        <section class="material">
+            <form action="#" method="get">
+                <div class="field">
+                    <label for="prenom">Prénom&nbsp;:</label>
+                    <input type="text" name="prenom" id="prenom">
+                    <br>
+                    <label for="nom">Prénom&nbsp;:</label>
+                    <input type="text" name="nom" id="nom">
+                </div>
+                <div class="actions">
+                    <button type="button" id="colorBtn">Contacte-moi !</button>
+                    <!-- à modifier en button de type submit si on veut un vrai formulaire qui soumet les données -->
+                </div>
+            </form>
+        </section>
+    </div>
+</div>
+</body>
 </html>
 

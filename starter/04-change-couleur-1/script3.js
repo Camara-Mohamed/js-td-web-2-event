@@ -7,3 +7,16 @@ Ta mission est toujours la même : au clic sur un des boutons, colorie la page d
     - Mais cette fois, encore mieux (c'est la meilleure pratique), tu vas appliquer le style avec CSS, JavaScript va se contenter d'ajouter au clic, une classe sur le body qui indiquera à CSS dans quelle couleur il doit être stylé…
     PRESSÉ ? : copie-colle le code de l'exercice précédent et repars de là, il n'y a qu'à l'adapter un petit peu.
 */
+
+const buttons = document.querySelectorAll('.actions button');
+
+function colorie(evt) {
+    const couleurClasse = evt.currentTarget.id;
+
+    document.body.classList.remove('red', 'green', 'yellow', 'blue');
+    document.body.classList.add(couleurClasse);
+}
+
+for (const button of buttons) {
+    button.addEventListener('click', colorie);
+}

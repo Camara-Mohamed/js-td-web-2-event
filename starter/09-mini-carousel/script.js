@@ -14,3 +14,22 @@ AIDE : voici les étapes :
 5. En fin de longueur du tableau, on redémarre au début de l'index
 */
 
+document.addEventListener("DOMContentLoaded", () => {
+    const gallerie = [
+        "img/bell.svg",
+        "img/kiss.svg",
+        "img/star.svg",
+        "img/heart.svg"
+    ];
+
+    let index = 0;
+
+    const image = document.querySelector("img");
+    const buttonSuivant = document.getElementById("next");
+
+    buttonSuivant.addEventListener("click", () => {
+        index = (index + 1) % gallerie.length;
+
+        image.src = gallerie[index];
+    });
+});
